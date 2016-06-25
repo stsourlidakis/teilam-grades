@@ -499,7 +499,7 @@
 				for (var i = 1, len = out.length; i < len; i++) {
 					tempName = out[i - 1].split(')').pop().trim();
 					if(tempName=='')tempName = 'ΣΑΕ';
-					grades[tempName] = (out[i].split('	')[4].trim());
+					grades[tempName] = (out[i].split('	')[4].trim().replace(',', '.'));
 				}
 				for (key in grades) {
 					if(document.getElementById(key)){
