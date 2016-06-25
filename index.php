@@ -257,7 +257,6 @@
 		}
 		$grade = $totalGrades / $totalEcts;
 		$grade = round($grade,2);
-		echo $grade;
 
 	}
 ?>
